@@ -1,4 +1,4 @@
-import { AngularE2eTestingPage } from './app.po';
+import { AngularE2eTestingPage } from './home.po';
 import { browser } from 'protractor';
 
 // List of items in the menu
