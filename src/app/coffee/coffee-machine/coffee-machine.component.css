@@ -1,0 +1,13 @@
+.coffee-machine h3 {
+    text-align: center;
+}
+
+.coffee-machine img {
+    max-width: 80%;
+    width: 500px;
+}
+
+.coffee-machine button {
+    margin: 5px;
+    list-style: none;
+}

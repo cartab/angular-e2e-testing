@@ -1,0 +1,21 @@
+<div class="coffee-machine">
+    <h3>Which coffee would you like?</h3>
+
+    <div class="row">
+        <img class="col-lg-6 col-md-8 col-sm-12" src="../../../assets/images/coffee-machine.jpg" alt="Coffee Machine">
+
+        <div class="well col-lg-6 col-md-8 col-sm-12">
+            <button class="btn btn-primary"
+                    *ngFor="let item of menu"
+                    (click)="placeOrder(item)"
+                    [disabled]="isBrewing || orderReady"
+            >{{item}}</button>
+
+            <h4 *ngIf="isBrewing">Brewing you an amazing {{drink}}!!</h4>
+            <button class="btn btn-danger" *ngIf="isBrewing" (click)="cancelOrder()">Cancel</button>
+
+            <h4 *ngIf="orderReady">Your order is ready!!</h4>
+            <button *ngIf="orderReady" (click)="collectOrder()" class="btn btn-success">Collect Order</button>
+        </div>
+    </div>
+</div>
