@@ -46,7 +46,7 @@ describe('angular-e2e-testing App', () => {
   });
 
   // Note: In this test, protractor will wait for the timeout to execute before it runs the assertions.
-  it('should show order complete 2 seconds after the order has been place', () => {
+  it('should show order complete 2 seconds after the order has been placed', () => {
     page.navigateTo();
     page.placeOrder(1);
 
